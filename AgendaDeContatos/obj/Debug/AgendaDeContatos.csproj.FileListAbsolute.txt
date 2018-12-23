@@ -1,0 +1,150 @@
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\AgendaDeContatos.dll.config
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\AgendaDeContatos.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\AgendaDeContatos.pdb
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csc.exe
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csc.exe.config
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csc.rsp
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csi.exe
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csi.exe.config
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csi.rsp
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.AppContext.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Console.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.Compression.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.Pipes.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Claims.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.ValueTuple.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.XPath.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\vbc.exe
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\vbc.exe.config
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\vbc.rsp
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\VBCSCompiler.exe
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Antlr3.Runtime.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Newtonsoft.Json.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\System.Web.Optimization.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\WebGrease.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\System.Web.Optimization.xml
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Newtonsoft.Json.xml
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Antlr3.Runtime.pdb
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.csprojAssemblyReference.cache
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.csproj.CoreCompileInputs.cache
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.csproj.CopyComplete
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.dll
+C:\Users\lucia\OneDrive\Documentos\Visual Studio 2017\Projetos\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.pdb
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\AgendaDeContatos.dll.config
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\AgendaDeContatos.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\AgendaDeContatos.pdb
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csc.exe
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csc.exe.config
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csc.rsp
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csi.exe
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csi.exe.config
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\csi.rsp
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.AppContext.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Collections.Immutable.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Console.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.Compression.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.FileSystem.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.IO.Pipes.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Reflection.Metadata.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.AccessControl.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Claims.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Security.Principal.Windows.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.ValueTuple.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.XPath.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\vbc.exe
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\vbc.exe.config
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\vbc.rsp
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\VBCSCompiler.exe
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\roslyn\VBCSCompiler.exe.config
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Antlr3.Runtime.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\AspNet.ScriptManager.bootstrap.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\AspNet.ScriptManager.jQuery.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.ScriptManager.WebForms.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.Web.Infrastructure.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Newtonsoft.Json.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\System.Diagnostics.DiagnosticSource.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\System.Web.Optimization.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\WebGrease.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\System.Web.Optimization.xml
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Newtonsoft.Json.xml
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Antlr3.Runtime.pdb
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\System.Diagnostics.DiagnosticSource.xml
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.csprojAssemblyReference.cache
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.csproj.CoreCompileInputs.cache
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.csproj.CopyComplete
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.dll
+C:\ProjetosPessoais\AgendaDeContatos\AgendaDeContatos\obj\Debug\AgendaDeContatos.pdb

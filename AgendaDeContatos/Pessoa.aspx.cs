@@ -13,7 +13,7 @@ namespace AgendaDeContatos
         {
             if (!Page.IsPostBack)
             {
-                
+
             }
         }
         RegrasDAO dao = new RegrasDAO();
@@ -23,7 +23,7 @@ namespace AgendaDeContatos
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
             CriarTabela();
-        }    
+        }
 
         private void CriarTabela()
         {
@@ -51,7 +51,7 @@ namespace AgendaDeContatos
                             ViewState["Row"] = dt;
                             GridView1.DataSource = ViewState["Row"];
                             GridView1.DataBind();
-                        }                       
+                        }
                     }
                     else
                     {
@@ -72,11 +72,11 @@ namespace AgendaDeContatos
                 throw new Exception(ex.Message);
             }
         }
-        
+
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             DataTable dtl = (DataTable)ViewState["Row"];
-            if(dtl.Rows.Count > 0)
+            if (dtl.Rows.Count > 0)
             {
                 dtl.Rows[e.RowIndex].Delete();
                 GridView1.DataSource = dtl;
@@ -95,20 +95,38 @@ namespace AgendaDeContatos
                 dao.SalvarPessoa(p);
 
                 Int32 id = dao.SelecionarPessoa();
-                for(int i = 0; i < GridView1.Rows.Count; i++)
+                for (int i = 0; i < GridView1.Rows.Count; i++)
                 {
                     t.DDD = GridView1.Rows[i].Cells[1].Text;
                     t.Numero = GridView1.Rows[i].Cells[2].Text;
                     t.IdPessoa = id;
                     dao.SalvarContato(t);
                 }
-                GridView1.DataSource = null;
+                LimparCampos();
+                labAlerta.Visible = true;
+                labAlerta.Text = "Cadastro salvo com sucesso.";
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 labAlerta.Visible = true;
                 labAlerta.Text = ex.Message;
             }
+        }
+        private void LimparCampos()
+        {
+            txtNome.Text = string.Empty;
+            txtCpf.Text = string.Empty;
+            txtNascimento.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            int cont = GridView1.Rows.Count;
+            DataTable dtl = (DataTable)ViewState["Row"];
+            for (int i = 0; i < cont; i++)
+            {
+                dtl.Rows[0].Delete();
+                GridView1.DataSource = dtl;
+                GridView1.DataBind();
+            }
+            
         }
     }
 }

@@ -14,15 +14,6 @@
     <script src="Scripts/jquery-3.3.1.min.js"></script>
     <script src="Scripts/jquery.maskedinput.js"></script>
 
-    <script type="text/javascript">
-        jQuery(function () {
-            $("#txtCpf").mask("999.999.999-99");
-            $("#txtDdd").mask("(99)");
-            $("#txtTelefone").mask("9999-9999");
-            $("#txtNascimento").mask("99/99/9999");
-        });
-    </script>
-
 </head>
 <body>
     <form runat="server">
@@ -51,7 +42,20 @@
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
         </div>
-
+        <script type="text/javascript">
+            jQuery(function () {
+                $("#txtDdd").mask("(99)");
+                $("#txtTelefone").mask("9999-9999");
+            });
+            $(function () {
+                $('.cpf').each(function () {
+                    $(this).mask("999.999.999-99");
+                })
+                $('.data').each(function () {
+                    $(this).mask("99/99/9999");
+                })
+            });
+        </script>
     </form>
 </body>
 </html>

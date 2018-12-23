@@ -18,7 +18,7 @@
                         </div>
                         <div class="form-group col-lg-6">
                             <p>Cpf:</p>
-                            <input type="text" id="txtCpf" name="txtCpf" class="form-control" />
+                            <asp:TextBox ID="txtCpf" CssClass="form-control cpf" runat="server"></asp:TextBox>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <p>Data de Nascimento:</p>
-                            <input type="text" id="txtNascimento" name="txtNascimento" class="form-control" />
+                            <asp:TextBox ID="txtNascimento" CssClass="form-control data" runat="server"></asp:TextBox>
                         </div>
                     </div>
                 </fieldset>

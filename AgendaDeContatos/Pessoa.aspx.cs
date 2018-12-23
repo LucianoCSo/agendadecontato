@@ -42,7 +42,7 @@ namespace AgendaDeContatos
                     {
                         dt = (DataTable)ViewState["Row"];
                         DataRow dr = null;
-                        if (dt.Rows.Count > 0)
+                        if (dt.Rows.Count >= 0)
                         {
                             dr = dt.NewRow();
                             dr["DDD"] = Request["txtDdd"];
@@ -89,8 +89,8 @@ namespace AgendaDeContatos
             try
             {
                 p.Nome = txtNome.Text;
-                p.CPF = Request["txtCpf"];
-                p.DataNascimento = Convert.ToDateTime(Request["txtNascimento"]);
+                p.CPF = txtCpf.Text;
+                p.DataNascimento = Convert.ToDateTime(txtNascimento.Text);
                 p.Email = txtEmail.Text;
                 dao.SalvarPessoa(p);
 

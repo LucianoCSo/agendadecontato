@@ -1,0 +1,66 @@
+Create Database AgendaTelefonica
+
+USE [AgendaTelefonica]
+GO
+
+/****** Object:  Table [dbo].[Pessoa]    Script Date: 23/12/2018 10:11:45 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Pessoa](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[nome] [varchar](100) NOT NULL,
+	[cpf] [varchar](14) NOT NULL,
+	[dataNascimento] [datetime] NULL,
+	[email] [varchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Telefone](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[ddd] [varchar](4) NOT NULL,
+	[numero] [varchar](9) NOT NULL,
+	[idPessoa] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[Telefone]  WITH CHECK ADD  CONSTRAINT [PK_Pessoa_Numero] FOREIGN KEY([idPessoa])
+REFERENCES [dbo].[Pessoa] ([id])
+GO
+
+ALTER TABLE [dbo].[Telefone] CHECK CONSTRAINT [PK_Pessoa_Numero]
+GO
+
+

@@ -8,23 +8,27 @@ namespace AgendaDeContatos
 {
     public partial class Pessoa : System.Web.UI.Page
     {
-
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!Page.IsPostBack)
-            {
-
-            }
-        }
         RegrasDAO dao = new RegrasDAO();
         EntidadePessoa p = new EntidadePessoa();
         EntidadeTelefone t = new EntidadeTelefone();
-
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+        #region Evento salvar telefone no gridview
+        /// <summary>
+        /// Evento click do botão
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
             CriarTabela();
         }
-
+        #endregion
+        #region Criar Tabela ao clicar no adicionar
+        /// <summary>
+        /// Metodo criar tabela
+        /// </summary>
         private void CriarTabela()
         {
             try
@@ -72,7 +76,13 @@ namespace AgendaDeContatos
                 throw new Exception(ex.Message);
             }
         }
-
+        #endregion
+        #region Evento excluir linha do GreiView
+        /// <summary>
+        /// Evento RowDeleting
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             DataTable dtl = (DataTable)ViewState["Row"];
@@ -83,28 +93,44 @@ namespace AgendaDeContatos
                 GridView1.DataBind();
             }
         }
-
+        #endregion
+        #region Evento salvar Cadastro
+        /// <summary>
+        /// Evento botão click salvar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
             try
             {
-                p.Nome = txtNome.Text;
-                p.CPF = txtCpf.Text;
-                p.DataNascimento = Convert.ToDateTime(txtNascimento.Text);
-                p.Email = txtEmail.Text;
-                dao.SalvarPessoa(p);
-
-                Int32 id = dao.SelecionarPessoa();
-                for (int i = 0; i < GridView1.Rows.Count; i++)
+                if (txtNome.Text == string.Empty || txtCpf.Text == string.Empty ||
+                    txtNascimento.Text == string.Empty || txtEmail.Text == string.Empty)
                 {
-                    t.DDD = GridView1.Rows[i].Cells[1].Text;
-                    t.Numero = GridView1.Rows[i].Cells[2].Text;
-                    t.IdPessoa = id;
-                    dao.SalvarContato(t);
+                    labAlerta.Visible = true;
+                    labAlerta.Text = "Campos Obrigatorios";
                 }
-                LimparCampos();
-                labAlerta.Visible = true;
-                labAlerta.Text = "Cadastro salvo com sucesso.";
+                else
+                {
+                    labAlerta.Visible = false;
+                    p.Nome = txtNome.Text;
+                    p.CPF = txtCpf.Text;
+                    p.DataNascimento = Convert.ToDateTime(txtNascimento.Text);
+                    p.Email = txtEmail.Text;
+                    dao.SalvarPessoa(p);
+
+                    Int32 id = dao.SelecionarPessoa();
+                    for (int i = 0; i < GridView1.Rows.Count; i++)
+                    {
+                        t.DDD = GridView1.Rows[i].Cells[1].Text;
+                        t.Numero = GridView1.Rows[i].Cells[2].Text;
+                        t.IdPessoa = id;
+                        dao.SalvarContato(t);
+                    }
+                    LimparCampos();
+                    labAlerta.Visible = true;
+                    labAlerta.Text = "Cadastro salvo com sucesso.";
+                }
             }
             catch (Exception ex)
             {
@@ -112,6 +138,11 @@ namespace AgendaDeContatos
                 labAlerta.Text = ex.Message;
             }
         }
+        #endregion
+        #region Metodo Limpar Campos
+        /// <summary>
+        /// Metodo Limpar Campos
+        /// </summary>
         private void LimparCampos()
         {
             txtNome.Text = string.Empty;
@@ -126,7 +157,8 @@ namespace AgendaDeContatos
                 GridView1.DataSource = dtl;
                 GridView1.DataBind();
             }
-            
+
         }
+        #endregion
     }
 }

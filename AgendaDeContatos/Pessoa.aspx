@@ -18,7 +18,7 @@
                         </div>
                         <div class="form-group col-lg-6">
                             <p>Cpf:</p>
-                            <asp:TextBox ID="txtCpf" CssClass="form-control cpf" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtCpf" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
                     </div>
 

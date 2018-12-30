@@ -130,6 +130,7 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Pessoa.aspx" />
     <Content Include="ScriptSQL\Agenda Telefoniva.sql" />
+    <Content Include="ScriptSQL\Consulta.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -171,7 +172,6 @@
     <Compile Include="DAO\RegrasDAO.cs" />
     <Compile Include="Entidades\EntidadePessoa.cs" />
     <Compile Include="Entidades\EntidadeTelefone.cs" />
-    <Compile Include="Entidades\Telefone.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -60,7 +60,7 @@ namespace AgendaDeContatos.Entidades
         }
         public virtual string Email
         {
-            get { return cpf; }
+            get { return email; }
             set
             {
                 if (value != string.Empty)

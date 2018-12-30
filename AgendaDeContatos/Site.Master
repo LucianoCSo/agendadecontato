@@ -48,7 +48,7 @@
                 $("#txtTelefone").mask("9999-9999");
             });
             $(function () {
-                $('.cpf').each(function () {
+                $('#txtCpf').each(function () {
                     $(this).mask("999.999.999-99");
                 })
                 $('.data').each(function () {

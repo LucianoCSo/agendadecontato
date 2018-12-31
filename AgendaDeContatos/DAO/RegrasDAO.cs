@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using AgendaDeContatos.Entidades;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace AgendaDeContatos.DAO
 {
@@ -74,6 +75,32 @@ namespace AgendaDeContatos.DAO
             finally
             {
                 conectar.Conectar();
+            }
+        }
+        public DataTable ListarContatos()
+        {
+            string link = "declare @Hoje datetime = getdate() " + 
+                            "select distinct p.id as 'ID', p.nome as 'Nome', p.email as 'E-mail', " +
+                             "p.cpf as 'CPF', CONCAT(FLOOR(DATEDIFF(DAY, p.dataNascimento, @Hoje) / 365.25), ' Anos') AS 'Idade', " +
+                              "count(t.numero) as 'Quantidade de Telefones' from Pessoa p " +
+                               "join Telefone t on t.idPessoa = p.id " +
+                                "group by p.id, p.nome, p.cpf, p.email, p.dataNascimento";
+            try
+            {
+                conectar.Conectar();
+                SqlCommand com = new SqlCommand(link, conectar.con);
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                da.Fill(dt);
+                return dt;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                conectar.Desconectar();
             }
         }
     }

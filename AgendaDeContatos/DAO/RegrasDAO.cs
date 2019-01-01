@@ -100,6 +100,7 @@ namespace AgendaDeContatos.DAO
                 conectar.Desconectar();
             }
         }
+
         public DataTable ListarPorNomeOuCPF(string nome, string cpf)
         {
             string link = "declare @Hoje datetime = getdate() "+ 

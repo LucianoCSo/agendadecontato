@@ -130,6 +130,7 @@ namespace AgendaDeContatos
                     LimparCampos();
                     labAlerta.Visible = true;
                     labAlerta.Text = "Cadastro salvo com sucesso.";
+                    Response.Redirect("ListagemDePessoas.aspx");
                 }
             }
             catch (Exception ex)

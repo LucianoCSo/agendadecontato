@@ -1,6 +1,7 @@
 ﻿using AgendaDeContatos.Entidades;
 using AgendaDeContatos.Util;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -159,6 +160,81 @@ namespace AgendaDeContatos.DAO
                 conectar.Conectar();
                 SqlCommand com = new SqlCommand(link, conectar.con);
                 com.Parameters.AddWithValue("@id", id);
+                Int32 salvar = Convert.ToInt32(com.ExecuteScalar());
+                return salvar;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                conectar.Desconectar();
+            }
+        }
+        public EntidadePessoa ListarPessoaPorId(int id)
+        {
+            string link = "select * from Pessoa where id = @id";
+            try
+            {
+                conectar.Conectar();
+                SqlCommand com = new SqlCommand(link, conectar.con);
+                com.Parameters.AddWithValue("@id", id);
+                SqlDataReader dr = com.ExecuteReader();
+                if (dr.Read())
+                {
+                    EntidadePessoa p = new EntidadePessoa();
+                    p.Id = Convert.ToInt32(dr["Id"]);
+                    p.Nome = dr["Nome"].ToString();
+                    p.CPF = dr["Cpf"].ToString();
+                    p.DataNascimento = Convert.ToDateTime(dr["DataNascimento"]);
+                    p.Email = dr["Email"].ToString();
+                    return p;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                conectar.Desconectar();
+            }
+        }
+        public DataTable ListarTelefonesPorIdPessoa(int id)
+        {
+            string link = "select id, ddd, numero, idPessoa from Telefone where idPessoa = @id";
+            try
+            {
+                conectar.Conectar();
+                SqlCommand com = new SqlCommand(link, conectar.con);
+                com.Parameters.AddWithValue("@id", id);
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                da.Fill(dt);
+                return dt;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                conectar.Desconectar();
+            }
+        }
+        public Int32 DeleteTelefonePorId(int id)
+        {
+            string link = "delete Telefone where id = @id";
+            try
+            {
+                conectar.Conectar();
+                SqlCommand com = new SqlCommand(link, conectar.con);
+                com.Parameters.AddWithValue("@id", id);               
                 Int32 salvar = Convert.ToInt32(com.ExecuteScalar());
                 return salvar;
             }

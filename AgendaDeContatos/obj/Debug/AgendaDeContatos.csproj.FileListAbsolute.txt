@@ -218,8 +218,8 @@ C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\bin\Microsoft.AspNet.Friend
 C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\bin\System.Diagnostics.DiagnosticSource.xml
 C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\obj\Debug\AgendaDeContatos.csprojAssemblyReference.cache
 C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\obj\Debug\AgendaDeContatos.csproj.CoreCompileInputs.cache
 C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\obj\Debug\AgendaDeContatos.csproj.CopyComplete
 C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\obj\Debug\AgendaDeContatos.dll
 C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\obj\Debug\AgendaDeContatos.pdb
+C:\ProjetosPessoais\agendadecontato\AgendaDeContatos\obj\Debug\AgendaDeContatos.csprojAssemblyReference.cache

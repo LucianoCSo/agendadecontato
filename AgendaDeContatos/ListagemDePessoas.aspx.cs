@@ -17,10 +17,11 @@ namespace AgendaDeContatos
         EntidadeTelefone t = new EntidadeTelefone();
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            GridView1.DataSource = dao.ListarContatos();
-            GridView1.DataBind();
-
+            if (!Page.IsPostBack)
+            {
+                GridView1.DataSource = dao.ListarContatos();
+                GridView1.DataBind();
+            }
         }
 
         protected void btnCriar_Click(object sender, EventArgs e)
@@ -47,6 +48,13 @@ namespace AgendaDeContatos
             dao.DeletarPessoa(id);
             GridView1.DataSource = dao.ListarContatos();
             GridView1.DataBind();
+        }
+
+        protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            Session["Id"] = int.Parse(GridView1.Rows[e.NewEditIndex].Cells[1].Text);
+            int id = Convert.ToInt32(Session["Id"]);
+            Response.Redirect("EditarPessoa.aspx");
         }
     }
 }

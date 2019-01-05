@@ -23,6 +23,12 @@ namespace AgendaDeContatos.Entidades
             this.email = email;
         }
 
+        public virtual int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
         public virtual string Nome
         {
             get { return nome; }

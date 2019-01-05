@@ -116,6 +116,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="EditarPessoa.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -171,6 +172,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="DAO\RegrasDAO.cs" />
+    <Compile Include="EditarPessoa.aspx.cs">
+      <DependentUpon>EditarPessoa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarPessoa.aspx.designer.cs">
+      <DependentUpon>EditarPessoa.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\EntidadePessoa.cs" />
     <Compile Include="Entidades\EntidadeTelefone.cs" />
     <Compile Include="Global.asax.cs">

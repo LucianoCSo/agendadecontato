@@ -96,17 +96,25 @@ namespace AgendaDeContatos
         {
             dt = (DataTable)ViewState["Row"];
             DataRow dr = null;
-            if (dt.Rows.Count >= 0)
+            if (Request["txtDdd"] == string.Empty || Request["txtTelefone"] == string.Empty)
             {
-                dr = dt.NewRow();
-                dr["Id"] = 0;
-                dr["DDD"] = Request["txtDdd"];
-                dr["Numero"] = Request["txtTelefone"];
-                dr["IdContato"] = Convert.ToInt32(Session["Id"]);
-                dt.Rows.Add(dr);
-                ViewState["Row"] = dt;
-                GridView1.DataSource = ViewState["Row"];
-                GridView1.DataBind();
+                labAlerta.Visible = true;
+                labAlerta.Text = "Os campos são obrigatorios.";
+            }
+            else
+            {
+                if (dt.Rows.Count >= 0)
+                {
+                    dr = dt.NewRow();
+                    dr["Id"] = 0;
+                    dr["DDD"] = Request["txtDdd"];
+                    dr["Numero"] = Request["txtTelefone"];
+                    dr["IdContato"] = Convert.ToInt32(Session["Id"]);
+                    dt.Rows.Add(dr);
+                    ViewState["Row"] = dt;
+                    GridView1.DataSource = ViewState["Row"];
+                    GridView1.DataBind();
+                }
             }
         }
 

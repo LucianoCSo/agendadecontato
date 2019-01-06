@@ -9,7 +9,7 @@
             <div class="panel-body">
 
                 <fieldset class="col-md-6">
-                    <legend>Cadastro Pessoa</legend>
+                    <legend>Editar Pessoa</legend>
 
                     <div class="form-row">
                         <div class="form-group col-lg-6">

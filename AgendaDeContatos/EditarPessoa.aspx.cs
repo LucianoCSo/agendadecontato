@@ -1,6 +1,7 @@
 ﻿using AgendaDeContatos.DAO;
 using AgendaDeContatos.Entidades;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace AgendaDeContatos
     {
         RegrasDAO dao = new RegrasDAO();
         EntidadePessoa pessoa = new EntidadePessoa();
+        DataTable dt = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -23,7 +25,43 @@ namespace AgendaDeContatos
                 txtCpf.Text = pessoa.CPF;
                 txtNascimento.Text = pessoa.DataNascimento.ToString();
                 txtEmail.Text = pessoa.Email;
-                GridView1.DataSource = dao.ListarTelefonesPorIdPessoa(Convert.ToInt32(Session["Id"]));
+
+                List<EntidadeTelefone> lista = new List<EntidadeTelefone>();
+                lista = dao.ListarTelefonesPorIdPessoa(Convert.ToInt32(Session["Id"]));
+                for (int i = 0; i < lista.Count; i++)
+                {
+                    if (ViewState["Row"] != null)
+                    {
+                        dt = (DataTable)ViewState["Row"];
+                        DataRow dr = null;
+                        if (dt.Rows.Count >= 0)
+                        {
+                            dr = dt.NewRow();
+                            dr["Id"] = lista[i].Id;
+                            dr["DDD"] = lista[i].DDD;
+                            dr["Numero"] = lista[i].Numero;
+                            dr["IdContato"] = lista[i].IdPessoa;
+                            dt.Rows.Add(dr);
+                            ViewState["Row"] = dt;
+                        }
+                    }
+                    else
+                    {
+                        dt.Columns.Add("Id", typeof(int));
+                        dt.Columns.Add("DDD", typeof(string));
+                        dt.Columns.Add("Numero", typeof(string));
+                        dt.Columns.Add("IdContato", typeof(int));
+                        DataRow drf = dt.NewRow();
+                        drf["Id"] = lista[i].Id;
+                        drf["DDD"] = lista[i].DDD;
+                        drf["Numero"] = lista[i].Numero;
+                        drf["IdContato"] = lista[i].IdPessoa;
+                        dt.Rows.Add(drf);
+                        ViewState["Row"] = dt;
+
+                    }
+                }
+                GridView1.DataSource = ViewState["Row"];
                 GridView1.DataBind();
             }
         }
@@ -51,62 +89,26 @@ namespace AgendaDeContatos
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            
+
         }
 
         protected void btnAdicionar_Click(object sender, EventArgs e)
         {
-            CriarTabela();
-        }
-        private void CriarTabela()
-        {
-            try
+            dt = (DataTable)ViewState["Row"];
+            DataRow dr = null;
+            if (dt.Rows.Count >= 0)
             {
-                DataTable dt = new DataTable();
-                if (Request["txtDdd"] == string.Empty || Request["txtTelefone"] == string.Empty)
-                {
-                    labAlerta.Visible = true;
-                    labAlerta.Text = "Os campos são obrigatorios.";
-                }
-                else
-                {
-                    labAlerta.Visible = false;
-                    if (ViewState["RowEdit"] != null)
-                    {
-                        dt = (DataTable)ViewState["RowEdit"];
-                        DataRow dr = null;
-                        if (dt.Rows.Count >= 0)
-                        {
-                            dr = dt.NewRow();
-                            dr["Id"] = "";
-                            dr["DDD"] = Request["txtDdd"];
-                            dr["Telefone"] = Request["txtTelefone"];
-                            dt.Rows.Add(dr);
-                            ViewState["RowEdit"] = dt;
-                            GridView1.DataSource = ViewState["Row"];
-                            GridView1.DataBind();
-                        }
-                    }
-                    else
-                    {
-                        dt.Columns.Add("Id", typeof(string));
-                        dt.Columns.Add("DDD", typeof(string));
-                        dt.Columns.Add("Telefone", typeof(string));
-                        DataRow drf = dt.NewRow();
-                        drf["Id"] = "";
-                        drf["DDD"] = Request["txtDdd"];
-                        drf["Telefone"] = Request["txtTelefone"];
-                        dt.Rows.Add(drf);
-                        ViewState["RowEdit"] = dt;
-                        GridView1.DataSource = ViewState["RowEdit"];
-                        GridView1.DataBind();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
+                dr = dt.NewRow();
+                dr["Id"] = 0;
+                dr["DDD"] = Request["txtDdd"];
+                dr["Numero"] = Request["txtTelefone"];
+                dr["IdContato"] = Convert.ToInt32(Session["Id"]);
+                dt.Rows.Add(dr);
+                ViewState["Row"] = dt;
+                GridView1.DataSource = ViewState["Row"];
+                GridView1.DataBind();
             }
         }
+
     }
 }

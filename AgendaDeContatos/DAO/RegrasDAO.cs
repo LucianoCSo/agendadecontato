@@ -47,7 +47,7 @@ namespace AgendaDeContatos.DAO
                 Int32 salvar = Convert.ToInt32(com.ExecuteScalar());
                 return salvar;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -66,7 +66,7 @@ namespace AgendaDeContatos.DAO
                 int id = int.Parse(com.ExecuteScalar().ToString());
                 return id;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -77,7 +77,7 @@ namespace AgendaDeContatos.DAO
         }
         public DataTable ListarContatos()
         {
-            string link = "declare @Hoje datetime = getdate() " + 
+            string link = "declare @Hoje datetime = getdate() " +
                             "select distinct p.id as 'ID', p.nome as 'Nome', p.email as 'E-mail', " +
                              "p.cpf as 'CPF', CONCAT(FLOOR(DATEDIFF(DAY, p.dataNascimento, @Hoje) / 365.25), ' Anos') AS 'Idade', " +
                               "count(t.numero) as 'Quantidade de Telefones' from Pessoa p " +
@@ -92,7 +92,7 @@ namespace AgendaDeContatos.DAO
                 da.Fill(dt);
                 return dt;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -104,7 +104,7 @@ namespace AgendaDeContatos.DAO
 
         public DataTable ListarPorNomeOuCPF(string nome, string cpf)
         {
-            string link = "declare @Hoje datetime = getdate() "+ 
+            string link = "declare @Hoje datetime = getdate() " +
                             "select distinct p.id as 'ID', p.nome as 'Nome', p.email as 'E-mail', p.cpf as 'CPF', " +
                             "CONCAT(FLOOR(DATEDIFF(DAY, p.dataNascimento, @Hoje) / 365.25), ' Anos') AS 'Idade', " +
                             "count(t.numero) as 'Quantidade de Telefones' from Pessoa p " +
@@ -122,7 +122,7 @@ namespace AgendaDeContatos.DAO
                 da.Fill(dt);
                 return dt;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -143,7 +143,7 @@ namespace AgendaDeContatos.DAO
                 Int32 salvar = Convert.ToInt32(com.ExecuteScalar());
                 return salvar;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -163,7 +163,7 @@ namespace AgendaDeContatos.DAO
                 Int32 salvar = Convert.ToInt32(com.ExecuteScalar());
                 return salvar;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -196,7 +196,7 @@ namespace AgendaDeContatos.DAO
                     return null;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -205,7 +205,7 @@ namespace AgendaDeContatos.DAO
                 conectar.Desconectar();
             }
         }
-        public DataTable ListarTelefonesPorIdPessoa(int id)
+        public List<EntidadeTelefone> ListarTelefonesPorIdPessoa(int id)
         {
             string link = "select id, ddd, numero, idPessoa from Telefone where idPessoa = @id";
             try
@@ -213,12 +213,21 @@ namespace AgendaDeContatos.DAO
                 conectar.Conectar();
                 SqlCommand com = new SqlCommand(link, conectar.con);
                 com.Parameters.AddWithValue("@id", id);
-                DataTable dt = new DataTable();
-                SqlDataAdapter da = new SqlDataAdapter(com);
-                da.Fill(dt);
-                return dt;
+                SqlDataReader dr = com.ExecuteReader();
+                List<EntidadeTelefone> lista = new List<EntidadeTelefone>();
+                EntidadeTelefone tel = null;
+                while (dr.Read())
+                {
+                    tel = new EntidadeTelefone();
+                    tel.Id = Convert.ToInt32(dr["Id"]);
+                    tel.DDD = dr["DDD"].ToString();
+                    tel.Numero = dr["Numero"].ToString();
+                    tel.IdPessoa = Convert.ToInt32(dr["IdPessoa"]);
+                    lista.Add(tel);
+                }
+                return lista;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -234,11 +243,11 @@ namespace AgendaDeContatos.DAO
             {
                 conectar.Conectar();
                 SqlCommand com = new SqlCommand(link, conectar.con);
-                com.Parameters.AddWithValue("@id", id);               
+                com.Parameters.AddWithValue("@id", id);
                 Int32 salvar = Convert.ToInt32(com.ExecuteScalar());
                 return salvar;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

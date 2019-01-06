@@ -20,6 +20,11 @@ namespace AgendaDeContatos.Entidades
             this.idPessoa = idPessoa;
         }
 
+        public virtual int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public virtual string DDD
         {
             get { return ddd; }
